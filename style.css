@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.carousel-container {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.slide {
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.ico-action {
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ico-prev {
+    left: 0;
+}
+
+.ico-prev:hover {
+    transform: scale(0.8) translateX(-10px);
+}
+
+.ico-next {
+    right: 0;
+}
+
+.ico-next:hover {
+    transform: scale(0.8) translateX(10px);
+}
+
+.thumbnail-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+.thumbnail:hover {
+    border: 2px solid #333;
+}

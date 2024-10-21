@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Image Carousel</title>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="carousel-container">
+        <img src="img/car1.jpg" class="slide" id="slide" alt="Car Image" />
+        <div class="caption" id="caption">Sleek Red Sports Car</div>
+        
+        <img src="img/previous.png" class="ico-action ico-prev" onclick="prevSlide()" alt="Previous" />
+        <img src="img/next.png" class="ico-action ico-next" onclick="nextSlide()" alt="Next" />
+    </div>
+
+    <div class="thumbnail-container">
+        <img src="img/car1.jpg" class="thumbnail" onclick="setSlide(0)" alt="Car 1" />
+        <img src="img/car2.jpg" class="thumbnail" onclick="setSlide(1)" alt="Car 2" />
+        <img src="img/car3.jpg" class="thumbnail" onclick="setSlide(2)" alt="Car 3" />
+        <img src="img/car4.jpg" class="thumbnail" onclick="setSlide(3)" alt="Car 4" />
+        <img src="img/car5.jpg" class="thumbnail" onclick="setSlide(4)" alt="Car 5" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
